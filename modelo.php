@@ -27,6 +27,11 @@ if (isset($_POST['nome'])) {
     <h1>Cadastro de Modelo</h1>
     <form method="POST">
         <p>
+             <p>
+             Id: <br>
+         <input class="form-control" type="text" name="marca_id" value="<?= $marcas ?>" readonly>
+                            </p>
+        <p>
     Modelo: <br>
     <input type="text" class ="form-control"name="nome" required>
     </p>
@@ -35,8 +40,8 @@ if (isset($_POST['nome'])) {
     <input type="text" class ="form-control"name="marca" required>
                     </p>
     <p>
-<input type="submit" class="btn btn-primary" value="Cadastrar">
-<input type="button" class ="btn btn-secondary"value="Cancelar" onclick="window.location='modelo.php';">
+<input type="submit" class="btn btn-primary" value="Gravar">
+<input type="button" class ="btn btn-secondary"value="Voltar" onclick="window.location='modelo.php';">
 </p>
 </form>
 </div>
